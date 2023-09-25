@@ -9,9 +9,9 @@
     height: 600px;
 
     border-radius: 5px;
-    border: 1px solid;
-    border-color: #c0c0c0;
-    box-shadow: 5px 5px 5px rgb(158, 236, 250);
+    border: 0.5px solid;
+    border-color: #c0c0c08a;
+    box-shadow: 5px 5px 5px rgba(158, 236, 250, 0.144);
 }
 
 #inform_form p {

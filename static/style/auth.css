@@ -9,9 +9,9 @@
 
     border-radius: 5px;
     border: 0.5px solid;
-    border-color: #c0c0c0;
+    border-color: #c0c0c08a;
     background-color:rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px rgb(158, 236, 250);
+    box-shadow: 5px 5px 5px rgba(158, 236, 250, 0.24);
 }
 
 #auth_form h1 {
