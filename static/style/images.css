@@ -1,0 +1,40 @@
+#upperBar img {
+    position: relative;
+    display: flex;
+    top: 3px;
+    left: 20px;
+    height: 50px;
+    width: 200px;
+}
+
+#inform_form {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 247, 255, 0.432)),
+                    url('/static/image/logo-sber.png');
+    background-position: 80% 5vh;
+    transition: 0.3s;
+}
+
+#inform_form:hover {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 255, 179, 0.432)),
+                    url('/static/image/logo-sber.png');
+    background-position: 59% 5vh;
+    transition: 0.3s;
+}
+
+
+
+/* @media (max-width: 2160px) {
+    body {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(55, 246, 253, 0.384)),
+                    url('/static/image/background_body_fhd.svg');
+    }
+}
+
+@media (min-width: 3000px) and (max-width: 3800px) {
+    body {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(160, 242, 245, 0.432)),
+                    url('/static/image/background_body_2k.svg');
+    }
+} */

@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href="{{ url_for('static', path = '/auth.css')}}">
+        <link rel = "stylesheet" href="/static/style/index.css">
+        <link rel = "stylesheet" href="/static/style/abstract.css">
+        <link rel = "stylesheet" href="/static/style/images.css">
+        <link rel = "stylesheet" href="/static/style/auth.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     </head>
 
     <body>
-        <div id="inform">
-
+        <div id="upperBar">
+            <img id="upperBarLogo" src="/static/image/upperBarLogo.png">
         </div>
-        
-        <div id="form">
+        <div id="Landing"></div>
 
+        <div class="auth_form">
+            <div id="inform_form">
+                <p>Сервис<p>
+                <h1>Диспетчерская</h1>
+                <h2>SCADA-система мониторинга объектов</h2>
+            </div>
+            <div id="auth_form">
+                <h1>Авторизация</h1>
+                <form id="auth">
+                    <input type="login"     id="login_form"     placeholder="Логин" required>
+                    <input type="password"  id="passw_form"     placeholder="Пароль" required>
+                    <input type="button" id="form_sub" value="Войти">
+                </form>
+            </div>
+            
         </div>
+
+        <script>
+            const form = document.querySelector('#auth');
+
+            if (form) {form.addEventListener('click', () => {
+
+            })}
+        </script>
     </body>
-
 </html>

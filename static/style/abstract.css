@@ -1,0 +1,53 @@
+#inform_form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 125px;
+    left: 25%;
+
+    width: 25vw;
+    height: 600px;
+
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #c0c0c0;
+    box-shadow: 5px 5px 5px rgb(158, 236, 250);
+}
+
+#inform_form p {
+    display: flex;
+    position: relative;
+    top: 5%;
+    align-items:flex-start;
+    /* flex-direction: row; */
+    font-family: 'Roboto';
+    font-style: italic;
+    color: var(--grey-40, #9e9ea0);
+    font-weight: 300;
+    left:3%;
+}
+
+#inform_form h1 {
+    display: flex;
+    position: relative;
+    align-items:flex-start;
+    /* flex-direction: row; */
+    font-family: 'Roboto';
+    font-weight: 800;
+    left:3%;
+
+}
+
+#inform_form h2 {
+    display: flex;
+    position: relative;
+    /* flex-direction: row; */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-size: medium;
+    color: var(--grey-40, #9e9ea0);
+    top: auto;
+    left:3%;
+
+}

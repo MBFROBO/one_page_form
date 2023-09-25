@@ -1,0 +1,37 @@
+body {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    /* background-color: rgb(205, 250, 235) !important; */
+}
+
+
+#upperBar {
+    position: relative;
+    display: flex;
+    top: 0px;
+    height: 55px;
+    width: 100vw;
+    z-index: 1;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px rgb(190, 190, 190);
+}
+
+
+.auth_form {
+    position: relative;
+    display: flex;
+}
+
+
+@media screen {
+    html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+}
