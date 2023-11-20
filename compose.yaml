@@ -1,0 +1,18 @@
+services:
+    server:
+        build:
+            context: .
+        ports:
+            - 4000:4000
+        environment:
+            - HOST=0.0.0.0
+            - PORT=4000
+            - DB_HOME=/app/db/db.yaml
+            - HTML_PAGE_PATH=/app/temp
+        volumes:
+          - app:/app/db:rw
+          - db:/app/temp
+
+volumes:
+    app:
+    db:

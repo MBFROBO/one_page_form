@@ -36,7 +36,7 @@
     <div class="admin_container">
         <div class="client_list"></div>
         <div class="form-container">
-            <form action="#" enctype="multipart/form-data" method="post">
+            <form name='add_file_form' enctype="multipart/form-data" method="post">
                 <input name="files" type="file" multiple>
                 <input name="client" type="text" placeholder="Введите имя нового клиента" required>
                 <p>{{result}}</p>
@@ -46,7 +46,6 @@
     </div>
 
     <script>
-        
         function on_client_click(id) {
             const admin_container = document.querySelector('body');
             const shadow = document.createElement('div');

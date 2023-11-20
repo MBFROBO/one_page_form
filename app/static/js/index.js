@@ -11,9 +11,6 @@ const URLS = [
 function auth_module(username, password, query, admin) {
     axios.post(URLS[0], query.auth_schema(username,password)).then((response) => {
         let rsp = response;
-        // var form = new FormData();
-        // form.append('username', username);
-        // form.append('password',password);
         var auth_token = rsp['data']['data']['login']['token'];
         var auth_refresh_token = rsp['data']['data']['login']['refreshToken'];
 
