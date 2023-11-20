@@ -1,6 +1,6 @@
 # one_page_form  
 ## Инструкция по использованию формы авторизации для ребрендинга  
-  1) git clone <link>  
+  1) git clone <link>ССЫЛКА НА ЭТОТ САЙТ<link>  
   2) cd /one_page_form  
   3) docker-compose up --build
 По адресу http://127.0.0.1:4000 поднимается приложение  
