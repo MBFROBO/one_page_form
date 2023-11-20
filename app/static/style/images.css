@@ -9,19 +9,19 @@
 
 #inform_form {
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 247, 255, 0.432)),
-                    url('/static/image/logo-sber.png');
-    background-position: 80% 5vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.171), rgba(167, 200, 243, 0.432)),
+                    url('/static/image/logo_2.png');
+    background-position: 55% 25vh;
     transition: 0.3s;
 }
 
-#inform_form:hover {
+/* #inform_form:hover {
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 255, 179, 0.432)),
-                    url('/static/image/logo-sber.png');
-    background-position: 59% 5vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(55, 137, 245, 0.432)),
+                    url('/static/image/logo_2.png');
+    background-position: 55% 25vh;
     transition: 0.3s;
-}
+} */
 
 
 

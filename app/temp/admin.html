@@ -16,24 +16,23 @@
         <script src="/static/js/query.js"></script>
         <script src="/static/js/index.js"></script>
         
-        
-
     </head>
 
     <body>
         <div id="upperBar">
-            <img id="upperBarLogo" src="/static/image/upperBarLogo.png">
+            <img id="upperBarLogo" src="/static/image/farvater_logo.svg">
         </div>
         <div id="Landing"></div>
 
         <div class="auth_form">
             <div id="inform_form">
                 <p>Сервис<p>
-                <h1>Диспетчерская</h1>
-                <h2>SCADA-система мониторинга объектов</h2>
+                <h1>Брендирование</h1>
+                <h2>Внесение клиентов в базу бренда</h2>
             </div>
             <div id="auth_form">
                 <h1>Авторизация</h1>
+                <p>Администратор</p>
                 <form id="auth">
                     <input type="login"     id="login_form"     placeholder="Логин" required>
                     <input type="password"  id="passw_form"     placeholder="Пароль" required>
@@ -51,7 +50,8 @@
             const password = document.getElementById('passw_form');
 
             if (form) {form.addEventListener('click', () => {
-                auth_module(username.value, password.value, Query);
+                auth_module(username.value, password.value, Query, true);
+                
             })}
         </script>
     </body>

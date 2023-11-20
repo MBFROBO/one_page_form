@@ -24,6 +24,13 @@
     justify-content: center;
 }
 
+#auth_form p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 90px;
+}
 
 input[type=login] {
     position: relative;
