@@ -34,15 +34,16 @@ function auth_module(username, password, query, admin) {
                     document.cookie = 'AXIIT_FARVATER-authentication-refresh-token='+auth_refresh_token;
                     document.cookie = 'AXIIT_FARVATER-dispatcher-room-ui-authorization-token=' + autz_token;
                     document.cookie = 'AXIIT_FARVATER-dispatcher-room-ui-authorization-refresh-token='+autz_refresh_token
-    
+
                     if (admin == false) {
-                        window.location.href = URLS[3];
+                    axios.post('https://dispatcher.farvater.group/', {}, {withCredentials: true}).then((response) => {
+                        if (response.status === 200) {
+                                window.location.href = URLS[3];    
+                            }
                         }
-                      else {
+                    )} else {
                         window.location.href = '/admin/add_client';
                     }
-                    
-                             
                 }
             });
         });
