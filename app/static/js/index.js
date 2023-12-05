@@ -28,7 +28,7 @@ function auth_module(username, password, query, admin) {
                     var autz_token = response['data']['data']["authorize"]['token'];
                     var autz_refresh_token = response['data']['data']["authorize"]['refreshToken'];
     
-                    // document.cookie = 'domain=https://dispatcher.farvater.group/';
+                    document.cookie = '.farvater.group';
                     document.cookie = 'auth_farvater_admin_brend='+auth_token;
                     document.cookie = 'AXIIT_FARVATER-authentication-token='+auth_token;
                     document.cookie = 'AXIIT_FARVATER-authentication-refresh-token='+auth_refresh_token;
