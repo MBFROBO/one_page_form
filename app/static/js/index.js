@@ -36,8 +36,10 @@ function auth_module(username, password, query, admin) {
                     document.cookie = 'AXIIT_FARVATER-dispatcher-room-ui-authorization-refresh-token='+autz_refresh_token
 
                     if (admin == false) {
-                    axios.post('https://dispatcher.farvater.group/', {}, {withCredentials: true}).then((response) => {
-                        if (response.status === 200) {
+                    axios.post('https://dispatcher.farvater.group/', query.ability_schema(), { 
+                        headers: {'Authorization':'Bearer ' + autz_token},
+                        withCredentials: true}).then((response) => {
+                        if (response.status == 200) {
                                 window.location.href = URLS[3];    
                             }
                         }

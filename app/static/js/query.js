@@ -47,26 +47,27 @@ class Query {
     }
 
     static ability_query() {
-        let query = "query getAbility {" +
-            "data: getAbility {" +
-              "profile {" +
-                "id" +
-              "}" +
-              "application {" +
-                "id" +
-              "}" +
-              "role {" +
-                "id}" +
-              "rules {" +
-                "action \n" +
-                "subject \n" +
-                "fields \n" +
-                "conditions \n" +
-                "inverted \n" +
-                "reason \n" +
-              "}"+
-            "}"+
-        "}"
+        let query = `query getAbility {
+            data: getAbility {
+              profile {
+                id
+              }
+              application {
+                id
+              }
+              role {
+                id
+              }
+              rules {
+                action
+                subject
+                fields
+                conditions
+                inverted
+                reason
+              }
+            }
+          }`
         return query
     }
 
