@@ -1,2 +1,4 @@
 /venv
 /README.md
+/compose.yaml
+/Dockerfile

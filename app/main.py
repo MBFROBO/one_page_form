@@ -20,10 +20,10 @@ templates = Jinja2Templates(directory=Path(__file__).parent.absolute() / "temp")
 async def redirect():
     return RedirectResponse(url='/auth')
 
-@app.get("/auth")
-async def root(request:Request):
+@app.get("/auth/{client_name}")
+async def root(request:Request, client_name: str):
     try:
-        client = request.headers['client']
+        client = str(client_name)
     except:
         return {'message':"Неверные заголовки запроса. Установите заголовк 'client'"}
     
